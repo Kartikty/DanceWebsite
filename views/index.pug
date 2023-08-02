@@ -1,0 +1,58 @@
+doctype html    
+html 
+  head 
+    style 
+        title This is title 
+        include ../static/style.css 
+  body 
+    nav#navbar
+        ul
+            div#logo 
+                img(src="/static/logo.jpg.jpg")
+                | KDA 
+            li #[a(href="/") Home] 
+            li #[a(href="/") About]
+            li #[a(href="/") Services] 
+            li #[a(href="/") Classes info]
+            li #[a(href="/") Contact Us] 
+
+    section#introSection     
+        div  Welcome to kartik's Dance Academy
+        div.small  Eat Sleep Dance Repeat
+    section#missionsection 
+        h2 Our mission
+        div.card 
+            h3  Dance perfection
+            div.card-box 
+                div.card-img 
+                    image(src="/static/image12.jpg") 
+                div.card-content 
+                    p This the best dance academy of the universe      
+        div.card 
+            h3  Dance the way you like
+            div.card-box 
+                div.card-img 
+                    image(src="/static/image13.jpg") 
+                div.card-content 
+                    p This the best dance academy of the universe 
+        div.card 
+            h3  Expert teaching
+            div.card-box 
+                div.card-img 
+                    image(src="/static/image3.jpg") 
+                div.card-content 
+                    p This the best dance academy of the universe 
+    section#sponsersSection 
+        h2 Our Sponsors
+        div#sponsors 
+            img(src="/static/logo3.jpg", alt="sponsor image", class = "spImage")
+            img(src="/static/logo4.jpg", alt="sponsor image", class = "spImage") 
+            img(src="/static/logo5.jpg", alt="sponsor image", class = "spImage") 
+            img(src="/static/logo6.jpg", alt="sponsor image", class = "spImage") 
+
+    footer#footer 
+        | @Copyright 2023 KartikdanceAcademy.com | All Rights Reserved        
+    
+    
+    script 
+    include ../static/index.js    

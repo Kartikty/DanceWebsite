@@ -1,0 +1,22 @@
+doctype html 
+html    
+    head 
+        title This is title 
+        block scripts 
+        block style
+    body 
+        nav#navbar
+            ul
+                div#logo 
+                    img(src="/static/logo.jpg.jpg")
+                    | KDA 
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/") Services] 
+                li #[a(href="/") Classes info]
+                li #[a(href="/contact") Contact Us]
+                 
+        block content
+        footer#footer 
+            | @Copyright 2023 KartikdanceAcademy.com | All Rights Reserved
+            
