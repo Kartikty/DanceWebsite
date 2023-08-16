@@ -38,6 +38,21 @@ app.get('/contact', (req, res)=>{
     const params = {}
     res.status(200).render('contact.pug', params);
 })
+app.get('/about', (req, res)=>{
+    res.render('about.pug',{
+        title: 'home page'
+    })
+})
+app.get('/service', (req, res)=>{
+    res.render('service.pug',{
+        title: 'home page'
+    })
+})
+app.get('/classesInfo', (req, res)=>{
+    res.render('classesInfo.pug',{
+        title: 'home page'
+    })
+})
 app.post('/contact', (req, res)=>{
     var myData = new contact(req.body)
     myData.save().then(()=>{
